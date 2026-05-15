@@ -64,7 +64,7 @@ Use `--api-url <url>` only when the user is targeting a non-default p11 API. `p1
 2. Import only document-safe exports from `@p11-core/components`.
 3. Keep the document content static and reviewable. Do not build app controls, forms, nav, or interactive widgets inside the document.
 4. Run `p11 share <file>`.
-5. Return the read URL and mention that the edit URL is private when it appears in command output.
+5. Return both the read URL and edit URL to the user when they appear in command output. Make clear that the edit URL is private.
 
 For quick component details, read `references/components.md`. For current CLI-bundled docs and examples, prefer:
 
@@ -82,7 +82,7 @@ If the user provides an edit URL, update the existing shareable link with:
 p11 share <page.tsx> --edit-url <editUrl>
 ```
 
-Treat edit URLs as bearer credentials. Do not expose them unnecessarily in summaries, logs, or documents meant for reviewers.
+Treat edit URLs as bearer credentials. Show them to the requesting user after share/update commands, but do not expose them unnecessarily in summaries, logs, or documents meant for reviewers.
 
 ## Comments
 
