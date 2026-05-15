@@ -8,6 +8,6 @@
   "homepage": "https://github.com/rarexlabs/p11-public",
   "repository": "https://github.com/rarexlabs/p11-public",
   "license": "MIT",
-  "keywords": ["p11", "documents", "publishing", "claude-code"],
+  "keywords": ["p11", "documents", "sharing", "claude-code"],
   "skills": "./skills/"
 }

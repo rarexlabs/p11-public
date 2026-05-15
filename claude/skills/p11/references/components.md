@@ -59,7 +59,7 @@ export default function Notes() {
       <Section>
         <CodeBlock language="typescript">
           {code`
-            const published = await publish({
+            const shared = await share({
               input: "./proposal.tsx"
             });
           `}
