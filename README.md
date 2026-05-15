@@ -7,13 +7,13 @@
 #### Global/User Scope
 
 ```bash
-npx -y codex-marketplace add rarexlabs/p11-public/codex --plugin --global
+npx -y codex-marketplace add rarexlabs/p11-public/plugins/p11 --plugin --global
 ```
 
 #### Project Scope
 
 ```bash
-npx -y codex-marketplace add rarexlabs/p11-public/codex --plugin --project
+npx -y codex-marketplace add rarexlabs/p11-public/plugins/p11 --plugin --project
 ```
 
 ### Claude Code

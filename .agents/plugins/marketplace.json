@@ -8,7 +8,7 @@
       "name": "p11",
       "source": {
         "source": "local",
-        "path": "./codex"
+        "path": "./plugins/p11"
       },
       "policy": {
         "installation": "AVAILABLE",
