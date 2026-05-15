@@ -7,13 +7,13 @@
 #### Global/User Scope
 
 ```bash
-npx -y codex-marketplace add rarexlabs/p11-public/plugins/p11 --plugin --global
+npx -y codex-marketplace add rarexlabs/p11-public/codex --plugin --global
 ```
 
 #### Project Scope
 
 ```bash
-npx -y codex-marketplace add rarexlabs/p11-public/plugins/p11 --plugin --project
+npx -y codex-marketplace add rarexlabs/p11-public/codex --plugin --project
 ```
 
 ### Claude Code
@@ -21,13 +21,13 @@ npx -y codex-marketplace add rarexlabs/p11-public/plugins/p11 --plugin --project
 #### Global/User Scope
 
 ```bash
-claude plugin marketplace add rarexlabs/p11-public --scope user --sparse .claude-plugin claude && claude plugin install p11@p11-public --scope user
+claude plugin marketplace add rarexlabs/p11-public --scope user --sparse .claude-plugin claude-code && claude plugin install p11@p11-public --scope user
 ```
 
 #### Project Scope
 
 ```bash
-claude plugin marketplace add rarexlabs/p11-public --scope project --sparse .claude-plugin claude && claude plugin install p11@p11-public --scope project
+claude plugin marketplace add rarexlabs/p11-public --scope project --sparse .claude-plugin claude-code && claude plugin install p11@p11-public --scope project
 ```
 
 Restart Claude Code or run `/reload-plugins` in an active Claude Code session after installation.

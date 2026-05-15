@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "p11",
-      "source": "./claude",
+      "source": "./claude-code",
       "description": "Create shareable, commentable documents from Claude Code.",
       "author": {
         "name": "Rarex Labs"
