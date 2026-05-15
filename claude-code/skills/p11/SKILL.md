@@ -95,6 +95,8 @@ p11 comments <target>
 
 Use `--version <number>` only when the user asks for comments on a historical version.
 
+When discussing comments with the user, refer to the quoted text instead of line numbers unless the user specifically asks for line numbers. Treat line numbers as agent-only source references for locating and modifying the relevant TSX when the user asks for document changes.
+
 ## History
 
 Use history to recover recent document links:
