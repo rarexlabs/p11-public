@@ -67,7 +67,9 @@ Use `--api-url <url>` only when the user is targeting a non-default p11 API. `p1
 2. Import only document-safe exports from `@p11-core/components`.
 3. Keep the document content static and reviewable. Do not build app controls, forms, nav, or interactive widgets inside the document.
 4. Run `p11 share <file>`.
-5. Return both the read URL and edit URL to the user when they appear in command output. Make clear that the edit URL is private.
+5. Return both full URLs when they appear in command output, with concise labels:
+   - Read URL: shareable and commentable
+   - Edit URL: private; use for pushing new versions and deleting the document
 
 For quick component details, read `references/components.md`. For current CLI-bundled docs and examples, prefer:
 
