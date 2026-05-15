@@ -2,7 +2,7 @@
   "name": "p11-public",
   "description": "Claude Code plugins for creating shareable, commentable documents with p11.",
   "owner": {
-    "name": "Rarex Labs"
+    "name": "Rare X Labs"
   },
   "plugins": [
     {
@@ -10,7 +10,7 @@
       "source": "./claude-code",
       "description": "Create shareable, commentable documents from Claude Code.",
       "author": {
-        "name": "Rarex Labs"
+        "name": "Rare X Labs"
       },
       "homepage": "https://github.com/rarexlabs/p11-public",
       "repository": "https://github.com/rarexlabs/p11-public",
