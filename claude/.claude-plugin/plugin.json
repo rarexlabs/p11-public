@@ -1,0 +1,13 @@
+{
+  "name": "p11",
+  "description": "Create shareable, commentable documents from Claude Code.",
+  "author": {
+    "name": "Rarex Labs",
+    "url": "https://rarexlabs.com"
+  },
+  "homepage": "https://github.com/rarexlabs/p11-public",
+  "repository": "https://github.com/rarexlabs/p11-public",
+  "license": "MIT",
+  "keywords": ["p11", "documents", "publishing", "claude-code"],
+  "skills": "./skills/"
+}

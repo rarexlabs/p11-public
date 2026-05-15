@@ -1,0 +1,21 @@
+{
+  "name": "p11-public",
+  "description": "Claude Code plugins for creating shareable, commentable documents with p11.",
+  "owner": {
+    "name": "Rarex Labs"
+  },
+  "plugins": [
+    {
+      "name": "p11",
+      "source": "./claude",
+      "description": "Create shareable, commentable documents from Claude Code.",
+      "author": {
+        "name": "Rarex Labs"
+      },
+      "homepage": "https://github.com/rarexlabs/p11-public",
+      "repository": "https://github.com/rarexlabs/p11-public",
+      "category": "Productivity",
+      "tags": ["p11", "documents", "publishing", "claude-code"]
+    }
+  ]
+}
