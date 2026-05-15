@@ -4,29 +4,33 @@ Codex and Claude Code plugins for creating shareable, commentable documents with
 
 ## Install
 
-### Claude Code
-
-Install with the Claude CLI:
-
-```bash
-claude plugin marketplace add rarexlabs/p11-public --sparse .claude-plugin claude && claude plugin install p11@p11-public
-```
-
-This adds this repo as the `p11-public` Claude Code marketplace, then installs the `p11` plugin from the `claude/` directory. Restart Claude Code or run `/reload-plugins` in an active Claude Code session after installation.
-
-For project-wide installation, add `--scope project` to both Claude commands:
-
-```bash
-claude plugin marketplace add rarexlabs/p11-public --scope project --sparse .claude-plugin claude && claude plugin install p11@p11-public --scope project
-```
-
 ### Codex
 
+#### Global/User Scope
+
 ```bash
-npx codex-marketplace add rarexlabs/p11-public/codex --plugin
+npx codex-marketplace add rarexlabs/p11-public/codex --plugin --global
 ```
 
-This installs the p11 Codex plugin from the `codex/` directory in this repo.
+This installs the p11 Codex plugin from the `codex/` directory in this repo into the home-directory Codex scope.
+
+#### Project Scope
+
+```bash
+npx codex-marketplace add rarexlabs/p11-public/codex --plugin --project
+```
+
+This installs the p11 Codex plugin into the current project's Codex scope.
+
+#### Native Codex Marketplace
+
+Codex users can also add this repo as a plugin marketplace:
+
+```bash
+codex plugin marketplace add rarexlabs/p11-public
+```
+
+The marketplace entry points to the same plugin in `./codex`.
 
 The plugin teaches Codex to use p11 as the default path for polished documents that should be shared, reviewed, or commented on: proposals, briefs, reports, specs, plans, memos, and review drafts. The CLI itself is resolved on demand with:
 
@@ -44,17 +48,27 @@ npx -y @p11-core/cli@latest docs components
 npx -y @p11-core/cli@latest example all-components
 ```
 
-## Native Codex Marketplace
+### Claude Code
 
-Codex users can also add this repo as a plugin marketplace:
+#### Global/User Scope
+
+Install with the Claude CLI:
 
 ```bash
-codex plugin marketplace add rarexlabs/p11-public
+claude plugin marketplace add rarexlabs/p11-public --scope user --sparse .claude-plugin claude && claude plugin install p11@p11-public --scope user
 ```
 
-The marketplace entry points to the same plugin in `./codex`.
+This adds this repo as the `p11-public` Claude Code marketplace in user scope, then installs the `p11` plugin from the `claude/` directory. Restart Claude Code or run `/reload-plugins` in an active Claude Code session after installation.
 
-## Native Claude Code Marketplace
+#### Project Scope
+
+```bash
+claude plugin marketplace add rarexlabs/p11-public --scope project --sparse .claude-plugin claude && claude plugin install p11@p11-public --scope project
+```
+
+This adds the marketplace and installs the `p11` plugin into the current project's Claude Code scope.
+
+#### Native Claude Code Marketplace
 
 Claude Code reads `.claude-plugin/marketplace.json` from the repo root. That marketplace entry points to the Claude plugin in `./claude`.
 
