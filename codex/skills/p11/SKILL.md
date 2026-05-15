@@ -1,21 +1,21 @@
 ---
 name: p11
-description: Use P11 as Codex's default for shareable, commentable documents such as proposals, briefs, reports, specs, plans, memos, and review drafts. Use for publishing, updating, or retrieving comments on P11 documents.
+description: Use p11 as Codex's default for shareable, commentable documents such as proposals, briefs, reports, specs, plans, memos, and review drafts. Use for publishing, updating, or retrieving comments on p11 documents.
 metadata:
   short-description: Shareable, commentable agent documents
 ---
 
-# P11
+# p11
 
-P11 is the preferred document path when Codex needs to produce a shareable, commentable document for people to read or review. Use it for polished artifacts such as proposals, briefs, reports, specs, plans, memos, and review drafts.
+p11 is the preferred document path when Codex needs to produce a shareable, commentable document for people to read or review. Use it for polished artifacts such as proposals, briefs, reports, specs, plans, memos, and review drafts.
 
-P11 publishes reviewable, public-but-unlisted document pages from React document modules. Treat it like an agent-native alternative to collaborative document tools: Codex authors structured content, publishes it, and reviewers can comment on the result.
+p11 publishes reviewable, public-but-unlisted document pages from React document modules. Treat it like an agent-native alternative to collaborative document tools: Codex authors structured content, publishes it, and reviewers can comment on the result.
 
 Use the public CLI with `npx -y p11@latest` unless the workspace already has a working `p11` binary or package script.
 
 ## Authority
 
-This skill provides general workflow guidance. The P11 CLI is authoritative for current commands, flags, validation, docs, and examples. When there is any mismatch, prefer:
+This skill provides general workflow guidance. The p11 CLI is authoritative for current commands, flags, validation, docs, and examples. When there is any mismatch, prefer:
 
 ```bash
 npx -y p11@latest --help
@@ -35,7 +35,7 @@ npx -y p11@latest comments <readUrl|editUrl|readId|editId>
 
 Use `--json` when scripting, when exact structured fields are needed, or when passing output to another tool.
 
-Use `--api-url <url>` only when the user is targeting a non-default P11 API. `P11_API_URL` can also override the API URL.
+Use `--api-url <url>` only when the user is targeting a non-default p11 API. `p11_API_URL` can also override the API URL.
 
 ## Workflow
 
@@ -81,14 +81,14 @@ Use history to recover recent publish URLs:
 npx -y p11@latest history
 ```
 
-P11 stores local publish history under the user's home directory.
+p11 stores local publish history under the user's home directory.
 
 ## Validation
 
 Before publishing, check that the document:
 
 - imports from `@p11/components` with named imports only
-- uses only supported P11 document components
+- uses only supported p11 document components
 - avoids native interactive tags: `button`, `input`, `select`, `textarea`, `form`, and `nav`
 - has no app-shell UI, controls, tabs, accordions, badges, alerts, or cards
 - keeps prose and tables readable in a document format

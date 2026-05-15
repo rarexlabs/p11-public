@@ -1,5 +1,5 @@
 interface:
-  display_name: "P11"
+  display_name: "p11"
   short_description: "Shareable, commentable agent documents"
   brand_color: "#2563EB"
   default_prompt: "Use $p11 to create a shareable, commentable document from this."

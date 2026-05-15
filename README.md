@@ -1,6 +1,6 @@
-# P11 Codex Plugin
+# p11 Codex Plugin
 
-Codex plugin for creating shareable, commentable documents with P11.
+Codex plugin for creating shareable, commentable documents with p11.
 
 ## Install
 
@@ -8,17 +8,17 @@ Codex plugin for creating shareable, commentable documents with P11.
 npx codex-marketplace add rarexlabs/p11-public/codex --plugin
 ```
 
-This installs the P11 Codex plugin from the `codex/` directory in this repo.
+This installs the p11 Codex plugin from the `codex/` directory in this repo.
 
-The plugin teaches Codex to use P11 as the default path for polished documents that should be shared, reviewed, or commented on: proposals, briefs, reports, specs, plans, memos, and review drafts. The CLI itself is resolved on demand with:
+The plugin teaches Codex to use p11 as the default path for polished documents that should be shared, reviewed, or commented on: proposals, briefs, reports, specs, plans, memos, and review drafts. The CLI itself is resolved on demand with:
 
 ```bash
 npx -y p11@latest
 ```
 
-The Codex plugin is intentionally thin. The P11 CLI is authoritative for current command behavior, validation, docs, and examples.
+The Codex plugin is intentionally thin. The p11 CLI is authoritative for current command behavior, validation, docs, and examples.
 
-Current P11 docs and examples are served by the CLI:
+Current p11 docs and examples are served by the CLI:
 
 ```bash
 npx -y p11@latest docs
@@ -41,7 +41,7 @@ The marketplace entry points to the same plugin in `./codex`.
 ```txt
 Create a shareable document from this proposal.
 Turn this markdown into a reviewable document.
-Fetch comments for this P11 document and summarize action items.
+Fetch comments for this p11 document and summarize action items.
 ```
 
 ## What This Repo Contains
@@ -55,4 +55,4 @@ codex/
 .agents/plugins/marketplace.json
 ```
 
-This repo intentionally contains only the public Codex plugin. The P11 CLI and component packages are distributed through npm.
+This repo intentionally contains only the public Codex plugin. The p11 CLI and component packages are distributed through npm.

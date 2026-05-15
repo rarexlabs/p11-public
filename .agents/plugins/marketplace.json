@@ -1,7 +1,7 @@
 {
   "name": "p11-public",
   "interface": {
-    "displayName": "P11"
+    "displayName": "p11"
   },
   "plugins": [
     {

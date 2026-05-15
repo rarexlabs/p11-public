@@ -1,6 +1,6 @@
-# P11 Components
+# p11 Components
 
-P11 documents are React modules that export a default component and use only document-safe components from `@p11/components`.
+p11 documents are React modules that export a default component and use only document-safe components from `@p11/components`.
 
 ## Basic Document
 
@@ -159,4 +159,4 @@ form
 nav
 ```
 
-P11 output should read like a document, not an application screen.
+p11 output should read like a document, not an application screen.
