@@ -1,0 +1,28 @@
+{
+  "name": "p11",
+  "version": "0.1.0",
+  "description": "Create shareable, commentable documents from Codex.",
+  "author": {
+    "name": "Rarex Labs",
+    "url": "https://rarexlabs.com"
+  },
+  "repository": "https://github.com/rarexlabs/p11-public",
+  "license": "MIT",
+  "keywords": ["p11", "documents", "publishing", "codex"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "P11",
+    "shortDescription": "Agent-native docs for sharing and comments.",
+    "longDescription": "Use P11 as Codex's default path for polished documents that need to be shared, reviewed, and commented on. Author proposals, briefs, reports, specs, plans, memos, and review drafts with document-safe React components, publish them with the P11 CLI, and retrieve comments.",
+    "developerName": "Rarex Labs",
+    "category": "Productivity",
+    "capabilities": ["Write"],
+    "websiteURL": "https://github.com/rarexlabs/p11-public",
+    "defaultPrompt": [
+      "Create a shareable document from this.",
+      "Turn this brief into a reviewable doc.",
+      "Fetch comments for this P11 document."
+    ],
+    "brandColor": "#2563EB"
+  }
+}
