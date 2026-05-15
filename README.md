@@ -16,12 +16,6 @@ npx codex-marketplace add rarexlabs/p11-public/codex --plugin --global
 npx codex-marketplace add rarexlabs/p11-public/codex --plugin --project
 ```
 
-#### Native Codex Marketplace
-
-```bash
-codex plugin marketplace add rarexlabs/p11-public
-```
-
 ### Claude Code
 
 #### Global/User Scope
@@ -37,9 +31,3 @@ claude plugin marketplace add rarexlabs/p11-public --scope project --sparse .cla
 ```
 
 Restart Claude Code or run `/reload-plugins` in an active Claude Code session after installation.
-
-#### Native Claude Code Marketplace
-
-```bash
-claude plugin marketplace add . --scope local && claude plugin install p11@p11-public --scope local
-```
