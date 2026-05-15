@@ -13,7 +13,7 @@ This installs the p11 Codex plugin from the `codex/` directory in this repo.
 The plugin teaches Codex to use p11 as the default path for polished documents that should be shared, reviewed, or commented on: proposals, briefs, reports, specs, plans, memos, and review drafts. The CLI itself is resolved on demand with:
 
 ```bash
-npx -y p11@latest
+npx -y @p11-core/cli@latest
 ```
 
 The Codex plugin is intentionally thin. The p11 CLI is authoritative for current command behavior, validation, docs, and examples.
@@ -21,9 +21,9 @@ The Codex plugin is intentionally thin. The p11 CLI is authoritative for current
 Current p11 docs and examples are served by the CLI:
 
 ```bash
-npx -y p11@latest docs
-npx -y p11@latest docs components
-npx -y p11@latest example all-components
+npx -y @p11-core/cli@latest docs
+npx -y @p11-core/cli@latest docs components
+npx -y @p11-core/cli@latest example all-components
 ```
 
 ## Native Codex Marketplace

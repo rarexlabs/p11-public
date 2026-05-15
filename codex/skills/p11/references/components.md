@@ -1,11 +1,11 @@
 # p11 Components
 
-p11 documents are React modules that export a default component and use only document-safe components from `@p11/components`.
+p11 documents are React modules that export a default component and use only document-safe components from `@p11-core/components`.
 
 ## Basic Document
 
 ```tsx
-import { Document, Heading, Section, Text } from "@p11/components";
+import { Document, Heading, Section, Text } from "@p11-core/components";
 
 export default function Proposal() {
   return (
@@ -51,7 +51,7 @@ code
 Use `code` with `CodeBlock` for readable multiline snippets:
 
 ```tsx
-import { CodeBlock, Document, Section, code } from "@p11/components";
+import { CodeBlock, Document, Section, code } from "@p11-core/components";
 
 export default function Notes() {
   return (
@@ -97,7 +97,7 @@ import {
   TableHead,
   TableHeader,
   TableRow
-} from "@p11/components";
+} from "@p11-core/components";
 
 export default function Summary() {
   return (
