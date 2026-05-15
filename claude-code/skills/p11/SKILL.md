@@ -32,7 +32,7 @@ p11 --help
 
 3. Use `p11` for all commands once the global CLI is available.
 4. If global installation is blocked by permissions, network access, or environment policy, fall back to `npx -y @p11-core/cli@latest`.
-5. If any `p11 share` or `p11 comments` command prints an update warning such as `p11 <version> is available. Current: <version>`, upgrade with `npm install -g @p11-core/cli@latest` before using p11 again.
+5. If any `p11` command prints an update warning such as `p11 <version> is available. Current: <version>`, upgrade with `npm install -g @p11-core/cli@latest` before using p11 again.
 6. Never install `@p11-core/cli` into the workspace. Do not run project-scoped package installs, do not add it to `package.json`, and do not modify lockfiles for p11 CLI installation.
 
 ## Authority
