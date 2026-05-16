@@ -4,6 +4,30 @@
 
 ### Codex
 
+#### Codex App UI
+
+1. Open the Codex app.
+2. Go to the plugins or marketplaces settings.
+3. Click **Add marketplace**.
+4. Set **Source** to:
+
+   ```text
+   rarexlabs/p11-public
+   ```
+
+5. Leave **Git ref** as:
+
+   ```text
+   main
+   ```
+
+6. Leave **Sparse paths** empty.
+7. Click **Add marketplace**.
+8. Open the newly added `p11-public` marketplace.
+9. Install the `p11` plugin.
+
+#### CLI
+
 #### Global/User Scope
 
 ```bash
