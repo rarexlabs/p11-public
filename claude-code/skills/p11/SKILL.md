@@ -53,6 +53,7 @@ p11 share <page.tsx>
 p11 share <page.tsx> --edit-url <editUrl>
 p11 history
 p11 comments <readUrl|editUrl|readId|editId>
+p11 reply <readUrl|readId> <commentId> --name "Claude Code" --body <text>
 ```
 
 Use `--json` when scripting, when exact structured fields are needed, or when passing output to another tool.
@@ -98,6 +99,14 @@ p11 comments <target>
 Use `--version <number>` only when the user asks for comments on a historical version.
 
 When discussing comments with the user, refer to the quoted text instead of line numbers unless the user specifically asks for line numbers. Treat line numbers as agent-only source references for locating and modifying the relevant TSX when the user asks for document changes.
+
+When replying to a review comment, use:
+
+```bash
+p11 reply <readUrl|readId> <commentId> --name "Claude Code" --body <text>
+```
+
+Use the reply name `Claude Code` for replies from Claude Code. Prefer `--body-file <file>` or `--body-file -` for multi-line replies. Use `--version <number>` only when replying on a specific historical version.
 
 ## History
 
