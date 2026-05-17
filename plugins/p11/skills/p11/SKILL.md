@@ -100,7 +100,7 @@ p11 comments <target>
 
 Use `--version <number>` only when the user asks for comments on a historical version.
 
-When discussing comments with the user, refer to the quoted text instead of line numbers unless the user specifically asks for line numbers. Treat line numbers as agent-only source references for locating and modifying the relevant TSX when the user asks for document changes.
+When discussing comments with the user, refer to the quoted text instead of line numbers unless the user specifically asks for line numbers. Treat line numbers as agent-only source references for locating and modifying the relevant TSX when the user asks for document changes. A comment line number is an approximate source anchor for the nearby rendered content; it may point to the JSX element that produced the content rather than the exact text line.
 
 When replying to a review comment, use:
 
@@ -109,6 +109,8 @@ p11 reply <readUrl|readId> <commentId> --name "Codex" --body <text>
 ```
 
 Use the reply name `Codex` for replies from Codex. Prefer `--body-file <file>` or `--body-file -` for multi-line replies. Use `--version <number>` only when replying on a specific historical version.
+
+When the user asks you to reply to comments that reviewers left, post the reply with `p11 reply` instead of only drafting the response in chat. Keep replies concise and use short paragraphs or newlines when helpful. After posting, ask the user to refresh the p11 page to see the replies.
 
 ## History
 
