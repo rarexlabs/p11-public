@@ -1,6 +1,6 @@
 {
   "name": "p11-public",
-  "description": "Claude Code plugins for creating shareable, commentable documents with p11.",
+  "description": "Claude Code plugins for creating, replying to, and revising shareable p11 documents.",
   "owner": {
     "name": "Rare X Labs"
   },
@@ -8,14 +8,14 @@
     {
       "name": "p11",
       "source": "./claude-code",
-      "description": "Create shareable, commentable documents from Claude Code.",
+      "description": "Create, reply to, and revise shareable p11 documents from Claude Code.",
       "author": {
         "name": "Rare X Labs"
       },
       "homepage": "https://github.com/rarexlabs/p11-public",
       "repository": "https://github.com/rarexlabs/p11-public",
       "category": "Productivity",
-      "tags": ["p11", "documents", "sharing", "claude-code"]
+      "tags": ["p11", "documents", "sharing", "comments", "claude-code"]
     }
   ]
 }

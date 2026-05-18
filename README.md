@@ -1,5 +1,11 @@
 # p11 Agent Plugins
 
+p11 provides three focused skills:
+
+- `p11:share` creates or updates shareable, commentable documents.
+- `p11:reply` reviews comments/replies and responds to visible threads that ask questions, are unclear, are indecisive, or need input.
+- `p11:revise` applies clear reviewer decisions and shares a new version.
+
 ## Install
 
 ### Codex
@@ -25,6 +31,8 @@
 7. Click **Add marketplace**.
 8. Open the newly added `p11-public` marketplace.
 9. Install the `p11` plugin.
+
+The installed Codex plugin exposes `p11:share`, `p11:reply`, and `p11:revise`.
 
 #### CLI
 
@@ -55,3 +63,5 @@ claude plugin marketplace add rarexlabs/p11-public --scope project --sparse .cla
 ```
 
 Restart Claude Code or run `/reload-plugins` in an active Claude Code session after installation.
+
+The installed Claude Code plugin provides matching `p11:share`, `p11:reply`, and `p11:revise` workflows through its `share`, `reply`, and `revise` skills.

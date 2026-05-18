@@ -1,27 +1,27 @@
 {
   "name": "p11",
-  "version": "0.0.3",
-  "description": "Create shareable, commentable documents from Codex.",
+  "version": "0.0.5",
+  "description": "Create, reply to, and revise shareable p11 documents from Codex.",
   "author": {
     "name": "Rare X Labs",
     "url": "https://rarexlabs.com"
   },
   "repository": "https://github.com/rarexlabs/p11-public",
   "license": "MIT",
-  "keywords": ["p11", "documents", "sharing", "codex"],
+  "keywords": ["p11", "documents", "sharing", "comments", "codex"],
   "skills": "./skills/",
   "interface": {
     "displayName": "p11",
-    "shortDescription": "Agent-native docs for sharing and comments.",
-    "longDescription": "Use p11 as Codex's default path for polished documents that need a shareable review link and comments. Author proposals, briefs, reports, specs, plans, memos, and review drafts with document-safe React components, create links with the p11 CLI, and retrieve comments.",
+    "shortDescription": "Share, reply to, and revise p11 documents.",
+    "longDescription": "Use p11 from Codex to create shareable, commentable documents, reply to visible review comments that need clarification, and revise existing p11 documents from clear reviewer decisions.",
     "developerName": "Rare X Labs",
     "category": "Productivity",
     "capabilities": ["Write"],
     "websiteURL": "https://github.com/rarexlabs/p11-public",
     "defaultPrompt": [
-      "Create a shareable document from this.",
-      "Turn this brief into a reviewable doc.",
-      "Fetch comments for this p11 document."
+      "Use p11:share to create a shareable document from this.",
+      "Use p11:reply to answer visible comments that need clarification on this p11 document.",
+      "Use p11:revise to apply clear comments and share a new version."
     ],
     "brandColor": "#2563EB"
   }
