@@ -1,6 +1,6 @@
 {
   "name": "p11",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Create, reply to, and revise shareable p11 documents from Claude Code.",
   "author": {
     "name": "Rare X Labs",
