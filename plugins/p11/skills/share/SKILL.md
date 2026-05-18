@@ -42,7 +42,7 @@ p11 example all-components
 3. Keep the document static and reviewable. Do not build controls, forms, navigation, tabs, cards, alerts, badges, or app-shell UI.
 4. Run `p11 share <file>` for a new document.
 5. Run `p11 share <file> --edit-url <editUrl>` only when updating an existing p11 link.
-6. Return both full URLs when available:
+6. In the final response after every successful share or update, always output both full URLs:
    - Read URL: shareable and commentable
    - Edit URL: private; use for pushing new versions and deleting the document
 
@@ -63,4 +63,4 @@ Read `references/components.md` for component details. Prefer CLI-bundled docs f
 
 If link creation fails, report the failed command and actionable error output. Retry only after fixing the concrete issue.
 
-Treat edit URLs as bearer credentials. Show them to the requesting user after share/update commands, but do not expose them unnecessarily in summaries, logs, or reviewer-facing documents.
+Treat edit URLs as bearer credentials. Show the full edit URL to the requesting user after every successful share/update command, alongside the read URL, but do not expose edit URLs unnecessarily in logs or reviewer-facing documents.
