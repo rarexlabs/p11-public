@@ -65,3 +65,12 @@ claude plugin marketplace add rarexlabs/p11-public --scope project --sparse .cla
 Restart Claude Code or run `/reload-plugins` in an active Claude Code session after installation.
 
 The installed Claude Code plugin provides matching `p11:share`, `p11:reply`, and `p11:revise` workflows through its `share`, `reply`, and `revise` skills.
+
+## Generic Skill Registries
+
+This repository also includes a registry-facing root `SKILL.md` for directories
+that index `SKILL.md` files directly.
+
+This wrapper is for discovery in generic skill registries. The authoritative
+platform packages remain the Claude Code plugin under `claude-code/` and the
+Codex plugin under `plugins/p11/`.
